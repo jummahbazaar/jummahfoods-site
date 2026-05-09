@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Jummah Foods — Made to Gather | Premium Afghan Frozen Comfort Food</title>
+  <meta name="description" content="Authentic Afghan Mantu and Aushak dumplings, handcrafted and flash-frozen for modern families. Made to Gather." />
+  <meta name="theme-color" content="#1a1714" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://jummahfoods.com/" />
+  <meta property="og:title" content="Jummah Foods — Made to Gather" />
+  <meta property="og:description" content="Premium handcrafted Afghan frozen meals designed for modern families." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jummahfoods.com/" />
+  <meta property="og:image" content="https://jummahfoods.com/assets/packaging.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jummah Foods — Made to Gather" />
+  <meta name="twitter:description" content="Premium handcrafted Afghan frozen meals designed for modern families." />
+  <meta name="twitter:image" content="https://jummahfoods.com/assets/packaging.jpg" />
+
+  <!-- Reusable SVG defs: package mockups + medallion + icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Geometric pattern -->
+      <pattern id="geo-gold" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M20 0 L40 20 L20 40 L0 20 Z" fill="none" stroke="#b89968" stroke-width="0.4"/>
+        <path d="M0 0 L40 40 M40 0 L0 40" stroke="#b89968" stroke-width="0.25"/>
+      </pattern>
+
+      <!-- The medallion (logo mark) -->
+      <symbol id="medallion" viewBox="0 0 40 40">
+        <g fill="none" stroke="currentColor" stroke-width="1.1">
+          <rect x="9" y="9" width="22" height="22"/>
+          <rect x="9" y="9" width="22" height="22" transform="rotate(45 20 20)"/>
+        </g>
+        <circle cx="20" cy="20" r="3" fill="currentColor"/>
+      </symbol>
+
+      <!-- Reusable package facade (gets repositioned/recolored at use site) -->
+      <symbol id="pkg" viewBox="0 0 400 600">
+        <rect x="20" y="20" width="360" height="560" fill="none" stroke="#b89968" stroke-width="0.6" opacity="0.5"/>
+        <rect x="60" y="50" width="280" height="50" fill="url(#geo-gold)" opacity="0.6"/>
+        <use href="#medallion" x="170" y="115" width="60" height="60" style="color:#b89968"/>
+        <text x="200" y="210" text-anchor="middle" fill="#f5efe2" font-family="'Playfair Display', serif" font-size="22" font-weight="500" letter-spacing="3">JUMMAH</text>
+        <line x1="172" y1="220" x2="228" y2="220" stroke="#b89968" stroke-width="0.5"/>
+        <text x="200" y="234" text-anchor="middle" fill="#f5efe2" font-family="Inter, sans-serif" font-size="9" letter-spacing="5">FOODS</text>
+        <text x="200" y="262" text-anchor="middle" fill="#d4b988" font-family="'Playfair Display', serif" font-style="italic" font-size="11" letter-spacing="2">MADE TO GATHER</text>
+      </symbol>
+
+      <!-- Icon: dumpling -->
+      <symbol id="ico-dumpling" viewBox="0 0 64 64">
+        <path d="M10 36c0-10 10-18 22-18s22 8 22 18c0 4-2 7-5 8H15c-3-1-5-4-5-8z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M16 28c2-2 4-3 6-3M22 25l3 4M28 22l3 6M34 22l1 7M40 24l-1 6M46 28l-3 4" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+      </symbol>
+      <!-- Icon: herb -->
+      <symbol id="ico-herb" viewBox="0 0 64 64">
+        <path d="M32 56V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M32 22c-6-4-12-2-14 4 4 4 10 4 14 0z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M32 30c-6-4-12-2-14 4 4 4 10 4 14 0z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M32 22c6-4 12-2 14 4-4 4-10 4-14 0z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M32 30c6-4 12-2 14 4-4 4-10 4-14 0z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M32 14c-3-3-3-7 0-10 3 3 3 7 0 10z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      </symbol>
+      <!-- Icon: yogurt bowl -->
+      <symbol id="ico-yogurt" viewBox="0 0 64 64">
+        <path d="M10 28h44l-3 22a4 4 0 0 1-4 3H17a4 4 0 0 1-4-3z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M14 28c2-7 8-12 18-12s16 5 18 12" fill="none" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="22" cy="38" r="1.2" fill="currentColor"/>
+        <circle cx="32" cy="42" r="1.2" fill="currentColor"/>
+        <circle cx="42" cy="38" r="1.2" fill="currentColor"/>
+      </symbol>
+      <!-- Icon: spice (mortar) -->
+      <symbol id="ico-spice" viewBox="0 0 64 64">
+        <path d="M14 30h36l-3 18a4 4 0 0 1-4 3H21a4 4 0 0 1-4-3z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M40 30v-6a8 8 0 0 0-16 0v6" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        <path d="M44 16l8-4M48 22l8-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        <circle cx="26" cy="40" r="1.2" fill="currentColor"/>
+        <circle cx="34" cy="42" r="1.2" fill="currentColor"/>
+        <circle cx="40" cy="40" r="1.2" fill="currentColor"/>
+      </symbol>
+
+      <!-- Badge icons (for product card / package) -->
+      <symbol id="badge-beef" viewBox="0 0 32 32">
+        <path d="M22 8c2 0 5 2 5 5s-2 5-4 6c-1 4-5 6-9 6-5 0-9-4-9-9 0-3 2-6 5-7-1-3 2-5 5-5 3 0 5 2 7 4z" fill="currentColor"/>
+      </symbol>
+      <symbol id="badge-herb" viewBox="0 0 32 32">
+        <path d="M16 28V14M16 16c-4-3-8-1-9 3 3 2 7 1 9-3zM16 16c4-3 8-1 9 3-3 2-7 1-9-3zM16 10c-2-2-2-5 0-7 2 2 2 5 0 7z" fill="currentColor"/>
+      </symbol>
+      <symbol id="badge-medallion" viewBox="0 0 32 32">
+        <g fill="none" stroke="currentColor" stroke-width="1.4"><rect x="8" y="8" width="16" height="16"/><rect x="8" y="8" width="16" height="16" transform="rotate(45 16 16)"/></g>
+        <circle cx="16" cy="16" r="2" fill="currentColor"/>
+      </symbol>
+      <symbol id="badge-gather" viewBox="0 0 32 32">
+        <path d="M16 4 L19 13 L28 14 L21 20 L23 29 L16 25 L9 29 L11 20 L4 14 L13 13 Z" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+</head>
+<body>
+  <!-- ==================== NAV ==================== -->
+  <header class="nav on-dark" role="banner">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Jummah Foods home">
+        <svg class="brand-mark" viewBox="0 0 32 32" style="color:var(--gold)" aria-hidden="true"><use href="#medallion"/></svg>
+        <span>
+          <span class="brand-name">Jummah</span>
+          <span class="brand-tag">Made to Gather</span>
+        </span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html" class="active">Home</a>
+        <a href="story.html">Our Story</a>
+        <a href="mantu.html">Mantu</a>
+        <a href="aushak.html">Aushak</a>
+        <a href="recipes.html">Journal</a>
+        <a href="stores.html">Stores</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="nav-icon" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3-3"/></svg></button>
+        <button class="nav-icon cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 7h14l-1.5 11.5a2 2 0 0 1-2 1.5H8.5a2 2 0 0 1-2-1.5L5 7Z"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg></button>
+        <button class="nav-toggle" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE MENU ==================== -->
+  <div class="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu-close" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" width="16" height="16"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="mantu.html">Mantu</a>
+      <a href="aushak.html">Aushak</a>
+      <a href="recipes.html">Journal</a>
+      <a href="stores.html">Stores</a>
+    </nav>
+  </div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text reveal">
+        <span class="hero-eyebrow">A Modern Afghan Kitchen</span>
+        <h1>Authentic Afghan<br/>Comfort Food <em>—<br/>Made to Gather.</em></h1>
+        <p>Premium handcrafted Mantu and Aushak dumplings, slow-folded by hand and flash-frozen at the peak of flavor — built for the way modern families come together.</p>
+        <div class="hero-actions">
+          <a href="mantu.html" class="btn btn-outline">Shop Mantu <span class="arrow">→</span></a>
+          <a href="story.html" class="btn btn-ghost" style="color:var(--gold-light); border-color:rgba(184,153,104,0.5)">Explore Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <svg class="hero-orbits" viewBox="0 0 600 600" aria-hidden="true">
+          <circle cx="300" cy="300" r="290"/>
+          <circle cx="300" cy="300" r="240"/>
+        </svg>
+
+        <!-- Hero product photo (Mantu + Aushak packages) -->
+        <img class="hero-package reveal reveal-delay-2" src="assets/packaging.jpg" alt="Jummah Foods Mantu and Aushak — Afghan beef and herb dumplings" />
+      </div>
+    </div>
+
+    <div class="hero-stats reveal reveal-delay-3">
+      <div><span class="num">100%</span><span>Hand-folded</span></div>
+      <div><span class="num">2</span><span>Authentic recipes</span></div>
+    </div>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ==================== MARQUEE ==================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Hand-folded dumplings <em class="dot">·</em> Authentic Afghan recipes <em class="dot">·</em> Flash-frozen at peak flavor <em class="dot">·</em> Made to Gather <em class="dot">·</em> Hand-folded dumplings <em class="dot">·</em> Authentic Afghan recipes <em class="dot">·</em> Flash-frozen at peak flavor <em class="dot">·</em> Made to Gather <em class="dot">·</em></span>
+      <span>Hand-folded dumplings <em class="dot">·</em> Authentic Afghan recipes <em class="dot">·</em> Flash-frozen at peak flavor <em class="dot">·</em> Made to Gather <em class="dot">·</em> Hand-folded dumplings <em class="dot">·</em> Authentic Afghan recipes <em class="dot">·</em> Flash-frozen at peak flavor <em class="dot">·</em> Made to Gather <em class="dot">·</em></span>
+    </div>
+  </div>
+
+  <!-- ==================== FEATURED PRODUCTS ==================== -->
+  <section class="bg-paper" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head-stack">
+          <span class="eyebrow">The Collection</span>
+          <h2>Two recipes,<br/>countless gatherings.</h2>
+        </div>
+        <p class="lede">Each Jummah Foods tray is built around a single dish — the way it was always meant to be served. Hand-folded dumplings, garlic yogurt, dried mint, and a finishing herb or beef topping nestled in a premium frozen presentation.</p>
+      </div>
+
+      <div class="products-grid">
+        <!-- Mantu card -->
+        <a class="product-card mantu reveal" href="mantu.html">
+          <svg class="product-bg-pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#geo-gold)"/></svg>
+          <div>
+            <span class="product-tag">01 — Beef</span>
+            <h3>Mantu</h3>
+            <p class="desc">Hand-folded dumplings filled with seasoned beef, cradled in garlic yogurt with tomato lentil topping &amp; dried mint.</p>
+          </div>
+
+          <!-- Mini package photo (Mantu half) -->
+          <div class="package-mini pkg-photo mantu" aria-hidden="true"></div>
+
+          <div class="product-foot">
+            <div class="product-price">$14.95<small>16 oz · Serves 2</small></div>
+            <span class="link-underline" style="color:var(--gold-light)">Shop now <span class="arrow">→</span></span>
+          </div>
+        </a>
+
+        <!-- Aushak card -->
+        <a class="product-card aushak reveal reveal-delay-1" href="aushak.html">
+          <svg class="product-bg-pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#geo-gold)"/></svg>
+          <div>
+            <span class="product-tag">02 — Herb</span>
+            <h3>Aushak</h3>
+            <p class="desc">Delicate dumplings filled with fresh leeks and herbs, finished with garlic yogurt, seasoned ground beef &amp; mint.</p>
+          </div>
+
+          <!-- Mini package photo (Aushak half) -->
+          <div class="package-mini pkg-photo aushak" aria-hidden="true"></div>
+
+          <div class="product-foot">
+            <div class="product-price">$14.95<small>16 oz · Serves 2</small></div>
+            <span class="link-underline" style="color:var(--gold-light)">Shop now <span class="arrow">→</span></span>
+          </div>
+        </a>
+      </div>
+
+      <p class="muted reveal" style="text-align:center; margin-top:3rem; font-size:13px; letter-spacing:0.18em; text-transform:uppercase;">More recipes joining the table soon</p>
+    </div>
+  </section>
+
+  <!-- ==================== BRAND STORY ==================== -->
+  <section class="bg-cream">
+    <div class="container">
+      <div class="split">
+        <div class="color-block burgundy reveal">
+          <svg class="pattern" aria-hidden="true"><rect width="100%" height="100%" fill="url(#geo-gold)"/></svg>
+          <div class="badge"><svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.2"><use href="#medallion" x="20" y="20" width="40" height="40"/></svg></div>
+          <span class="sub">Made to Gather</span>
+          <h3 class="serif" style="color:var(--ivory); font-style:italic; font-size:clamp(1.6rem, 2.6vw, 2.2rem); max-width:18ch; margin-top:1rem; line-height:1.3">"In our kitchen, food was never about the food."</h3>
+          <span class="quote-attr">— Bibi Jan</span>
+        </div>
+        <div class="split-text reveal reveal-delay-1">
+          <span class="eyebrow">Our Story</span>
+          <span class="gold-rule left"></span>
+          <h2>Where every meal is an invitation.</h2>
+          <p>In Afghan homes, food is hospitality. A pot of mantu on the table is a quiet sentence: <em>stay, eat, you belong here.</em> Jummah Foods began in a family kitchen — three generations of women folding dumplings on Friday afternoons, the air warm with garlic and dried mint.</p>
+          <p>We made Jummah to bottle that feeling. To bring the slow craft of an Afghan grandmother's table to a freezer aisle near you, without compromise on taste, texture, or tradition.</p>
+          <a href="story.html" class="link-underline">Read the full story <span class="arrow">→</span></a>
+          <div class="signature">— The Jummah Family<small>Founders</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="bg-ivory">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head-stack">
+          <span class="eyebrow">How It Works</span>
+          <h2>From freezer<br/>to feast in minutes.</h2>
+        </div>
+        <p class="lede">A premium dinner that respects your time. Three quiet steps between a long day and a long table.</p>
+      </div>
+
+      <div class="how-grid">
+        <div class="how-card reveal">
+          <div class="how-num">01</div>
+          <h3>Heat</h3>
+          <p>Steam, simmer, or microwave straight from frozen. Eight minutes from tray to table — no thawing, no fuss.</p>
+        </div>
+        <div class="how-card reveal reveal-delay-1">
+          <div class="how-num">02</div>
+          <h3>Plate</h3>
+          <p>Pour over the included garlic yogurt sauce. Crown it with the herb or beef topping and a generous shower of dried mint.</p>
+        </div>
+        <div class="how-card reveal reveal-delay-2">
+          <div class="how-num">03</div>
+          <h3>Gather</h3>
+          <p>Bring the platter to the middle of the table. Pour tea. Make space for one more chair. This is what the food was made for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== INGREDIENTS ==================== -->
+  <section class="bg-paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head-stack">
+          <span class="eyebrow">Premium Ingredients</span>
+          <h2>Sourced honestly,<br/>seasoned generously.</h2>
+        </div>
+        <p class="lede">No shortcuts, no fillers, no apologies. Real herbs, single-origin spices, and the patience of a recipe written on the heart.</p>
+      </div>
+
+      <div class="icons-grid">
+        <div class="icon-card reveal">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><use href="#ico-dumpling"/></svg>
+          <small>Hand-folded</small>
+          <h4>Dumpling Dough</h4>
+          <p>Pillowy, slow-rested, folded by hand the morning of production.</p>
+        </div>
+        <div class="icon-card reveal reveal-delay-1">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><use href="#ico-herb"/></svg>
+          <small>Garden-picked</small>
+          <h4>Fresh Herbs</h4>
+          <p>Leeks, scallions, parsley, dill — chopped within hours of harvest.</p>
+        </div>
+        <div class="icon-card reveal reveal-delay-2">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><use href="#ico-yogurt"/></svg>
+          <small>Slow-strained</small>
+          <h4>Garlic Yogurt</h4>
+          <p>Cultured whole-milk yogurt, fresh garlic, salt — nothing else.</p>
+        </div>
+        <div class="icon-card reveal reveal-delay-3">
+          <svg class="ico" viewBox="0 0 64 64" aria-hidden="true"><use href="#ico-spice"/></svg>
+          <small>Sun-dried</small>
+          <h4>Mint &amp; Spice</h4>
+          <p>The finishing snowfall — fragrant, bright, generous to a fault.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== RETAIL / GROCERY READY ==================== -->
+  <section class="bg-cream">
+    <div class="container">
+      <div class="retail reveal">
+        <div>
+          <span class="eyebrow on-dark">Grocery Ready</span>
+          <h2 style="margin-top:1rem;">Shelf-ready<br/>elevation.</h2>
+          <p>Premium frozen trays designed for the modern grocery freezer aisle — sustainable packaging, photogenic merchandising, and a story that earns its space next to the brands you trust.</p>
+          <div class="retail-stats">
+            <div class="retail-stat"><div class="num">16 oz</div><div class="lbl">Net Weight</div></div>
+            <div class="retail-stat"><div class="num">2</div><div class="lbl">Generous Servings</div></div>
+            <div class="retail-stat"><div class="num">8 min</div><div class="lbl">Heat &amp; Serve</div></div>
+          </div>
+          <div style="margin-top:2.5rem">
+            <a href="stores.html" class="btn btn-outline">Find a store <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <!-- Real packaging photo (matched aspect to image's native 11:9) -->
+        <div class="pkg-photo both" style="aspect-ratio:11/9; border-radius:var(--radius-lg); box-shadow:var(--shadow-xl);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="bg-paper">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-head-stack">
+          <span class="eyebrow">Loved at the Table</span>
+          <h2>What people are saying.</h2>
+        </div>
+        <p class="lede">From Afghan families who say it tastes like home, to first-time eaters who say it tastes like the 
