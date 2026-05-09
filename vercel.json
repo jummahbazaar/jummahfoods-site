@@ -6,9 +6,6 @@
     { "source": "/recipes", "destination": "/journal", "permanent": true },
     { "source": "/recipes.html", "destination": "/journal", "permanent": true }
   ],
-  "rewrites": [
-    { "source": "/journal", "destination": "/recipes.html" }
-  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -27,10 +24,12 @@
       ]
     },
     {
-      "source": "/(styles\\.css|script\\.js)",
+      "source": "/(.*\\.(css|js))",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
-    }
-  ]
-}
+    },
+    {
+      "source": "/((?!assets/).*\\.html)?",
+      "headers": [
+        { "key": "Cache-Control"
