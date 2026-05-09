@@ -168,25 +168,25 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; }
   background: transparent;
   color: var(--ivory);
   border: 1px solid rgba(255,255,255,0.35);
-  padding: 18px 36px;
-  border-radius: 0;
-  letter-spacing: 0.18em;
 }
 .btn-outline:hover {
   background: var(--gold);
   color: var(--black);
   border-color: var(--gold);
-  transform: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 .btn-outline-dark {
   background: transparent;
   color: var(--charcoal);
   border: 1px solid var(--charcoal);
-  padding: 18px 36px;
-  border-radius: 0;
-  letter-spacing: 0.18em;
 }
-.btn-outline-dark:hover { background: var(--charcoal); color: var(--ivory); }
+.btn-outline-dark:hover {
+  background: var(--charcoal);
+  color: var(--ivory);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
 
 .btn-burgundy { background: var(--burgundy); color: var(--ivory); }
 .btn-burgundy:hover { background: var(--burgundy-deep); transform: translateY(-2px); box-shadow: var(--shadow-md); }
@@ -1355,3 +1355,4 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; }
 .gold-rule.left { margin-left: 0; }
 
 /* Hide on small */
+@media (max-width: 760px
