@@ -24,12 +24,12 @@
       ]
     },
     {
-      "source": "/(.*\\.(css|js))",
+      "source": "/:path*.css",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
-      "source": "/((?!assets/).*\\.html)?",
+      "source": "/:path*.js",
       "headers": [
-        { "key": "Cache-Control"
+        { "key": "Cache-Control", "value": "public,
