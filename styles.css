@@ -528,8 +528,8 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; }
 }
 @media (max-width: 760px) { .hero-stats, .hero-scroll { display: none; } }
 
-/* Adapt nav for dark hero */
-.hero ~ .nav, .nav.on-dark { background: transparent; }
+/* Adapt nav for dark hero — keep solid dark, no transparency */
+.hero ~ .nav, .nav.on-dark { background: #1a1714; }
 .nav.on-dark .brand-name { color: var(--gold); }
 .nav.on-dark .brand-tag { color: rgba(184,153,104,0.7); }
 .nav.on-dark .nav-links a { color: rgba(245,239,226,0.85); }
@@ -537,7 +537,7 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; }
 .nav.on-dark .nav-links a.active { color: var(--gold-light); }
 .nav.on-dark .nav-icon { background: rgba(255,255,255,0.06); color: var(--ivory); }
 .nav.on-dark .nav-icon:hover { background: rgba(255,255,255,0.14); }
-.nav.scrolled.on-dark { background: rgba(26, 23, 20, 0.85); backdrop-filter: blur(18px); }
+.nav.scrolled.on-dark { background: #1a1714; }
 .nav.scrolled.on-dark .brand-name { color: var(--gold); }
 .nav.scrolled.on-dark .nav-links a { color: rgba(245,239,226,0.85); }
 .nav.scrolled.on-dark .nav-icon { background: rgba(255,255,255,0.06); color: var(--ivory); }
@@ -1354,4 +1354,4 @@ section { padding: clamp(4rem, 9vw, 8rem) 0; }
 }
 .gold-rule.left { margin-left: 0; }
 
-/* Hide 
+/* Hide on small */
