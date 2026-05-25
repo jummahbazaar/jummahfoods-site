@@ -151,10 +151,16 @@
 .brand-mark,
 .cta-final-ornament,
 .color-block .badge svg {
-  background-image: url('assets/jummah-foods-logo.png');
+  background-image: url('assets/Jummah-Logo-Circle.png');
   background-size: contain;
   background-position: center;
-  background-r
+  background-repeat: no-repeat;
+}
+.brand-mark > *,
+.cta-final-ornament > *,
+.color-block .badge svg > * { display: none !important; }
+.brand-mark { width: 46px !important; height: 46px !important; display: block; flex-shrink: 0; }
+.footer .brand-mark { width: 54px !important; height: 54px !important; }
 
 /* ===== Packaging showcase (full box renders) ===== */
 .pkg-showcase { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 3rem; }
