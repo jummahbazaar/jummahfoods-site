@@ -155,3 +155,11 @@
   background-size: contain;
   background-position: center;
   background-r
+
+/* ===== Packaging showcase (full box renders) ===== */
+.pkg-showcase { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 3rem; }
+@media (max-width: 760px) { .pkg-showcase { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; } }
+.pkg-show-item { display: block; text-decoration: none; }
+.pkg-show-item img { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); }
+.pkg-show-item:hover img { transform: translateY(-6px); }
+.pkg-show-cap { display: block; text-align: center; margin-top: 1.25rem; font-family: var(--font-serif); font-size: 1.15rem; color: var(--charcoal); letter-spacing: 0.01em; }
